@@ -23,4 +23,5 @@ EXPLAINATION:
 
 
 SIGNATURE/CITATION SECTION: 
-THIS IS MY ART.
+THIS IS THE ART OF DENVER BOONE.  
+Citation Points- for secne1(1pt), for scene2(1pt)
