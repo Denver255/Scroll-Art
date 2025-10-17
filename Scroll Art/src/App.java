@@ -2,12 +2,39 @@ public class App {
     static int counter=0;
     static boolean gurt=true;
     static String[] Superspaces= {"                    "};
+     static boolean why=true;
+     static int hello=0;
+     static boolean bye=true;
     public static void main(String[] args) throws InterruptedException {
         for(int i=0; i>-1;i++){
+            
+        if(why==true){
        sceneOneP2();
         System.out.println("");
         System.out.println("");
          sceneTwo();
+        }
+        if(why==false){
+       sceneOneP2();
+        System.out.println("");
+        System.out.println("");
+         sceneTwo2();
+        }
+        if(bye==true){
+            hello=hello +1;
+            why=true;
+            }
+        
+        if(hello==30){
+            bye=false;
+        }
+        if(bye==false){
+            hello=hello-1;
+            why=false;
+        }
+        if(hello==0){
+            bye=true;
+        }
                 
             Thread.sleep(35);
          }
@@ -32,6 +59,59 @@ public class App {
         stab[2][2]="\\";
         stab[2][3]="/";
         stab[2][4]="*";
+        stab[2][5]="/";
+        stab[3][0]="/";
+        stab[3][1]="-";
+        stab[3][2]="/";
+        stab[3][3]="|";
+        stab[3][4]="|";
+        stab[3][5]="/";
+        stab[4][0]="\\";
+        stab[4][1]="-";
+        stab[4][2]="\\";
+        stab[4][3]="|";
+        stab[4][4]="|";
+        stab[4][5]="\\";
+        stab[5][0]=" ";
+        stab[5][1]=" ";
+        stab[5][2]=" ";
+        stab[5][3]=" ";
+        stab[5][4]=" ";
+        stab[5][5]="\\";
+        stab[6][0]="/";
+        stab[6][1]="-";
+        stab[6][2]="/";
+        stab[6][3]="|";
+        stab[6][4]="|";
+        stab[6][5]="/";
+        stab[7][0]="\\";
+        stab[7][1]="-";
+        stab[7][2]="\\";
+        stab[7][3]="|";
+        stab[7][4]="|";
+        stab[7][5]="\\";
+        return stab;
+    }
+
+    static String[][] creation2(){
+        String[][] stab = new String[8][6];
+        stab[0][0]=" ";
+        stab[0][1]=" ";
+        stab[0][2]="-";
+        stab[0][3]="-";
+        stab[0][4]=" ";
+        stab[0][5]=" ";
+        stab[1][0]=" ";
+        stab[1][1]=" ";
+        stab[1][2]=")";
+        stab[1][3]=")";
+        stab[1][4]=" ";
+        stab[1][5]=" ";
+        stab[2][0]=" ";
+        stab[2][1]=" ";
+        stab[2][2]="\\";
+        stab[2][3]="/";
+        stab[2][4]=" ";
         stab[2][5]="/";
         stab[3][0]="/";
         stab[3][1]="-";
@@ -280,6 +360,17 @@ public class App {
         System.out.println(evolution4(creation()));
         System.out.println(evolution5(creation()));
         System.out.println(evolution6(creation()));
+       
+
+    }
+
+     static void sceneTwo2(){
+        System.out.println(evolution1(creation2()));
+        System.out.println(evolution2(creation2()));
+        System.out.println(evolution3(creation2()));
+        System.out.println(evolution4(creation2()));
+        System.out.println(evolution5(creation2()));
+        System.out.println(evolution6(creation2()));
        
 
     }
