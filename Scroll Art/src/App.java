@@ -1,10 +1,16 @@
 public class App {
     static int counter=0;
+    static int uno=0;
     static boolean gurt=true;
+    static boolean idk=false;
+    static boolean idkstart=false;
     static String[] Superspaces= {"                    "};
      static boolean why=true;
      static int hello=0;
      static boolean bye=true;
+    static two art1= new two("    \\)/ ","   --v  ","  /r )  ","  >r./  "," / '    ","c_/     ");
+    static two art2 = new two("(\\(\\     ","         ","(-.-).   ","        ","o_(\")(\")","        ");
+    
     public static void main(String[] args) throws InterruptedException {
         for(int i=0; i>-1;i++){
             
@@ -145,6 +151,10 @@ public class App {
         stab[7][5]="\\";
         return stab;
     }
+    
+    //  static String addon(){
+        
+    // }
 
     static String evolution1(String[][] stab){
         String Superspaces= "                    ";
@@ -295,50 +305,132 @@ public class App {
         fusion5[fusion5.length-8] = "|";
         return fusion5;
     }
-    static String getLine1(String[] fusion1){
+     static String getLine1(String[] fusion1, two art1){
         String line1="";
         for(int i=0; i<fusion1.length; i++){
             line1= line1 + " " + fusion1[i];
         }
+        line1= line1 + "                                       " + art1.lineOne;
         return line1;
     }
-    static String getLine2(String[] fusion2){
+    static String getLine2(String[] fusion2,two art1){
         String line2="";
          for(int i=0; i<fusion2.length; i++){
             line2= line2 + " " + fusion2[i];
         }
+        line2= line2 + "                                       " + art1.lineTwo;
         return line2;
     }
-     static String getLine3(String[] fusion3){
+     static String getLine3(String[] fusion3,two art1){
         String line3="";
          for(int i=0; i<fusion3.length; i++){
             line3= line3 + " " + fusion3[i];
         }
+        line3= line3 + "                                       " + art1.lineThree;
         return line3;
     }
-     static String getLine4(String[] fusion4){
+     static String getLine4(String[] fusion4,two art1){
         String line4="";
          for(int i=0; i<fusion4.length; i++){
             line4= line4 + " " + fusion4[i];
         }
+        line4= line4 + "                                       " + art1.lineFour;
         return line4;
     }
-     static String getLine5(String[] fusion5){
+     static String getLine5(String[] fusion5, two art1){
         String line5="";
          for(int i=0; i<fusion5.length; i++){
             line5= line5 + " " + fusion5[i];
         }
+        line5= line5 + "                                       " + art1.lineFive;
         return line5;
     }
+
+    static String getLine55(String[] fusion5, two art1){
+        String line5="";
+         for(int i=0; i<fusion5.length; i++){
+            line5= line5 + " " + fusion5[i];
+        }
+        line5= line5 + "                                       " + art1.lineSix;
+        return line5;
+    }
+
+
+     static String getLine6(String[] fusion1, two art2){
+        String line1="";
+        for(int i=0; i<fusion1.length; i++){
+            line1= line1 + " " + fusion1[i];
+        }
+        line1= line1 + "                                       " + art2.lineOne;
+        return line1;
+    }
+    static String getLine7(String[] fusion2,two art2){
+        String line2="";
+         for(int i=0; i<fusion2.length; i++){
+            line2= line2 + " " + fusion2[i];
+        }
+        line2= line2 + "                                       " + art2.lineTwo;
+        return line2;
+    }
+     static String getLine8(String[] fusion3,two art2){
+        String line3="";
+         for(int i=0; i<fusion3.length; i++){
+            line3= line3 + " " + fusion3[i];
+        }
+        line3= line3 + "                                       " + art2.lineThree;
+        return line3;
+    }
+     static String getLine9(String[] fusion4,two art2){
+        String line4="";
+         for(int i=0; i<fusion4.length; i++){
+            line4= line4 + " " + fusion4[i];
+        }
+        line4= line4 + "                                       " + art2.lineFour;
+        return line4;
+    }
+     static String getLine10(String[] fusion5, two art2){
+        String line5="";
+         for(int i=0; i<fusion5.length; i++){
+            line5= line5 + " " + fusion5[i];
+        }
+        line5= line5 + "                                       " + art2.lineFive;
+        return line5;
+    }
+
+    static String getLine101(String[] fusion5, two art2){
+        String line5="";
+         for(int i=0; i<fusion5.length; i++){
+            line5= line5 + " " + fusion5[i];
+        }
+        line5= line5 + "                                       " + art2.lineSix;
+        return line5;
+    }
+
     static void sceneOneP2(){
         //boolean gurt=true;
         String spaces[]= {" "};
-        System.out.println(getLine1(combine1(addSpaces(spaces))));
-        System.out.println(getLine2(combine2(addSpaces(spaces))));
-        System.out.println(getLine3(combine3(addSpaces(spaces))));
-        System.out.println(getLine4(combine4(addSpaces(spaces))));
-        System.out.println(getLine5(combine5(addSpaces(spaces))));
-        System.out.println(getLine5(combine5(addSpaces(spaces))));
+        if(idkstart==true){
+        idk=true;
+        idkstart=false;
+        }
+        if(uno>=0 && uno<15){
+        System.out.println(getLine1(combine1(addSpaces(spaces)), art1));
+        System.out.println(getLine2(combine2(addSpaces(spaces)), art1));
+        System.out.println(getLine3(combine3(addSpaces(spaces)),art1));
+        System.out.println(getLine4(combine4(addSpaces(spaces)),art1));
+        System.out.println(getLine5(combine5(addSpaces(spaces)),art1));
+        System.out.println(getLine55(combine5(addSpaces(spaces)),art1));
+       //System.out.println(uno);
+        }
+        if(uno>=15 && uno<30){
+        System.out.println(getLine6(combine1(addSpaces(spaces)), art2));
+        System.out.println(getLine7(combine2(addSpaces(spaces)), art2));
+        System.out.println(getLine8(combine3(addSpaces(spaces)),art2));
+        System.out.println(getLine9(combine4(addSpaces(spaces)),art2));
+        System.out.println(getLine10(combine5(addSpaces(spaces)),art2));
+        System.out.println(getLine101(combine5(addSpaces(spaces)),art2));
+        
+        }
         if(gurt==true){
             counter= counter+1;
         }
@@ -351,6 +443,19 @@ public class App {
         if(counter==0){
             gurt=true;
         }
+        if(uno>30){
+            uno=0;
+        }
+        uno=uno+1;
+        // if(uno==0){
+        //     uno=1;
+        //     idk=false;
+        // }
+        // if(uno==1 && idk== true){
+        //     uno=0;
+        //     idk=false;
+        // }
+        // idkstart=true;
     }
 
     static void sceneTwo(){
