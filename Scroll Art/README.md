@@ -23,5 +23,7 @@ EXPLAINATION:
 
 
 SIGNATURE/CITATION SECTION: 
-THIS IS THE ART OF DENVER BOONE.  
+The crime scene is the art of Denver Boone.  
 Citation Points- for secne1(1pt), for scene2(1pt)
+The bunny and the carrot are the art of Miss Feng.
+The art for art 3 is the art of Oliver Joffee.
